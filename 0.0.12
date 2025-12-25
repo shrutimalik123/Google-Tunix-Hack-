@@ -1,0 +1,73 @@
+Collecting clu
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\clu-0.0.12-py3-none-any.whl
+Collecting absl-py (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\absl_py-2.3.1-py3-none-any.whl
+Collecting etils[epath] (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\etils-1.13.0-py3-none-any.whl
+Collecting flax (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\flax-0.10.7-py3-none-any.whl
+Collecting jax (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\jax-0.6.2-py3-none-any.whl
+Collecting jaxlib (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\jaxlib-0.6.2-cp310-cp310-manylinux2014_x86_64.whl
+Collecting ml-collections (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\ml_collections-1.1.0-py3-none-any.whl
+Collecting numpy (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Collecting packaging (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\packaging-25.0-py3-none-any.whl
+Collecting typing-extensions (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\typing_extensions-4.15.0-py3-none-any.whl
+Collecting wrapt (from clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\wrapt-2.0.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+Collecting fsspec (from etils[epath]->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\fsspec-2025.12.0-py3-none-any.whl
+Collecting importlib_resources (from etils[epath]->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\importlib_resources-6.5.2-py3-none-any.whl
+Collecting zipp (from etils[epath]->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\zipp-3.23.0-py3-none-any.whl
+Collecting msgpack (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\msgpack-1.1.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Collecting optax (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\optax-0.2.6-py3-none-any.whl
+Collecting orbax-checkpoint (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\orbax_checkpoint-0.11.31-py3-none-any.whl
+Collecting tensorstore (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\tensorstore-0.1.76-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Collecting rich>=11.1 (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\rich-14.2.0-py3-none-any.whl
+Collecting PyYAML>=5.4.1 (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Collecting treescope>=0.1.7 (from flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\treescope-0.1.10-py3-none-any.whl
+Collecting ml_dtypes>=0.5.0 (from jax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\ml_dtypes-0.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Collecting opt_einsum (from jax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\opt_einsum-3.4.0-py3-none-any.whl
+Collecting scipy>=1.12 (from jax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Collecting markdown-it-py>=2.2.0 (from rich>=11.1->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\markdown_it_py-4.0.0-py3-none-any.whl
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=11.1->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\pygments-2.19.2-py3-none-any.whl
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=11.1->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\mdurl-0.1.2-py3-none-any.whl
+Collecting chex>=0.1.87 (from optax->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\chex-0.1.90-py3-none-any.whl
+Collecting setuptools (from chex>=0.1.87->optax->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\setuptools-80.9.0-py3-none-any.whl
+Collecting toolz>=0.9.0 (from chex>=0.1.87->optax->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\toolz-1.1.0-py3-none-any.whl
+Collecting nest_asyncio (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\nest_asyncio-1.6.0-py3-none-any.whl
+Collecting aiofiles (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\aiofiles-25.1.0-py3-none-any.whl
+Collecting protobuf (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl
+Collecting humanize (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\humanize-4.15.0-py3-none-any.whl
+Collecting simplejson>=3.16.0 (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\simplejson-3.20.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Collecting psutil (from orbax-checkpoint->flax->clu)
+  File was already downloaded c:\users\owner\documents\google-tunix-hack-\packages\psutil-7.2.0-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+Successfully downloaded clu absl-py etils flax jax jaxlib ml_dtypes numpy PyYAML rich pygments markdown-it-py mdurl scipy treescope typing-extensions fsspec importlib_resources ml-collections msgpack opt_einsum optax chex toolz orbax-checkpoint simplejson tensorstore aiofiles humanize nest_asyncio packaging protobuf psutil setuptools wrapt zipp

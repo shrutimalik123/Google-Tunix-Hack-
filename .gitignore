@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Offline Assets
+packages/*.whl
+packages/*.tar.gz
+# Keep the source of tunix if present
+!packages/tunix/
+
+# Models and Checkpoints
+/models/
+/checkpoints/
+/kaggle/
+*.jsonl
