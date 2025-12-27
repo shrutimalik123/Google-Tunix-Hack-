@@ -21,3 +21,7 @@ tensorflow_datasets
 tqdm
 transformers<=4.57.1
 hf_transfer
+clu>=0.0.12
+ml_collections
+absl-py
+chex

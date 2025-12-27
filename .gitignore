@@ -214,6 +214,7 @@ packages/*.tar.gz
 
 # Models and Checkpoints
 /models/
+/model/
 /checkpoints/
 /kaggle/
 *.jsonl
