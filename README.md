@@ -1,29 +1,3 @@
-# Tunix Reasoning Trainer: Fully Offline & Fixed
-
-**Use this notebook to train Gemma 2 on TPUs without internet access.**
-
-## Overview
-This project provides a robust, fully functional, offline-capable training pipeline for the Gemma 2 model using Google's `Tunix` library. It was engineered specifically to overcome the strict "No Internet" constraints of secure Kaggle environments.
-
-## Key Challenges Solved
-Running Tunix offline presented several critical blockers that this notebook resolves:
-
-1.  **Read-Only Filesystem Errors**
-    *   *Problem:* `pip install` fails on Kaggle's input directories because it tries to write build artifacts.
-    *   *Solution:* Implemented a structured workaround that mirrors the Tunix source code to the writable `/tmp` directory before installation, allowing the build process to complete successfully.
-
-2.  **Dependency Hell & Missing Wheels**
-    *   *Problem:* The `google-metrax` library has hidden dependencies (`clu`, `ml_collections`) that generate runtime import errors if not present.
-    *   *Solution:* I created a custom asset downloader script to pre-fetch these specific binary wheels, ensuring a complete dependency graph is available offline.
-
-3.  **Broken Imports & APIs**
-    *   *Problem:* The provided example documentation referenced `tunix.config` and `qwix.LoraConfig`, which do not exist in the current library version, leading to immediate `ImportError` and `AttributeError` crashes.
-    *   *Solution:* I reverse-engineered the API by analyzing the source code (`tests/test_common.py`), identifying the correct `PeftTrainer` and `qwix.LoraProvider` interfaces. I essentially rewrote the training initialization logic to match the actual library implementation.
-
-4.  **Missing Data Loader**
-    *   *Problem:* The example `text_dataset` module was not included in the pip package.
-    *   *Solution:* I implemented a drop-in `TextDataset` class directly within the notebook to handle `.jsonl` streaming and SentencePiece tokenization, ensuring data flows correctly to the model.
-
 ## How to Use
 1.  **Import Dataset:** Add the `tunix-offline-assets` dataset to your kernel.
 2.  **Disable Internet:** Ensure the "Internet" toggle is set to **Off**.
