@@ -128,6 +128,29 @@ if not found_inference:
     # If not found, append to end
     cells.append(create_code([line + "\n" for line in inference_code]))
 
+# --- 6. Fix pip install command ---
+fixed_pip = False
+for cell in cells:
+    if cell['cell_type'] == 'code':
+        new_source = []
+        changed = False
+        for line in cell['source']:
+            if "pip install /tmp/tunix/.[tpu]" in line:
+                # Replace the broken path-based install with cd + local install
+                fixed_line = line.replace("!pip install /tmp/tunix/.[tpu]", "!cd /tmp/tunix && pip install .[tpu]")
+                new_source.append(fixed_line)
+                changed = True
+            else:
+                new_source.append(line)
+        if changed:
+            cell['source'] = new_source
+            fixed_pip = True
+
+if fixed_pip:
+    print("Fixed pip install command.")
+else:
+    print("Warning: Could not find pip install command to fix.")
+
 # Write back
 with open(notebook_path, 'w', encoding='utf-8') as f:
     json.dump(nb, f, indent=1)
